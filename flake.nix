@@ -17,11 +17,14 @@
         buildInputs = with pkgs; [
           (python3.withPackages(ps: with ps; [
             scikit-learn
+            nltk
             matplotlib
             ipython
             jupyter
             numpy
             pandas
+            seaborn
+            gensim
           ]))
         ];
         # shellHook = "jupyter notebook";
